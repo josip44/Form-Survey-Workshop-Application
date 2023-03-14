@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Application</title>
+    <style>
+        /* Body Style */
+        h1 {
+            color: white;
+        }
+
+        body {
+            background-color: #3B5998;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* Form Style */
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px 30px;
+            box-sizing: content-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 2px;
+
+        }
+
+
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid;
+            display: block;
+            width: 80%;
+        }
+
+
+        button {
+            background-color: #3B5998;
+            color: white;
+            border: 1px solid;
+            width: 50%;
+            margin: auto;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Workshop Application</h1>
+
+    <form action="workshop_application.html">
+
+        <div class="form-control">
+            <!-- Name -->
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+        </div>
+        <div class="form-control">
+            <!-- Last Name -->
+            <label for="lname">Last Name</label><br>
+            <input type="text id=lname" name="lname" placeholder="Enter your last name">
+        </div>
+        <div class="form-control">
+            <!-- Home Adress -->
+            <label for="adress">Home Adress</label><br>
+            <input type="text" id="adress" name="adress" placeholder="Enter your adress">
+        </div>
+        <div class="form-control">
+            <!-- Phone number -->
+            <label for="pnumber">Phone Number</label><br>
+            <input type="text" id="pnumber" name="pnumber" placeholder="Enter your phone number">
+        </div>
+        <div class="form-control">
+            <!-- Email -->
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter an email">
+        </div>
+        <div class="form-control">
+            <!-- Number -->
+            <label for="age">Age</label><br>
+            <input type="number" id="age" name="age">
+        </div>
+        <div class="form-control">
+            <label for="knowledge">Do you have any basic knowledge in web development?</label><br>
+            <!-- Radio button -->
+            <input type="radio" name="konowledge" value="simple" id="knowledge">Yes<br>
+            <input type="radio" name="konowledge" value="simple" id="knowledge">No
+        </div>
+        <div class="form-control">
+            <label for="positiom">Choose position that best describes you</label><br>
+            <!-- Select -->
+            <select name="position" id="position">
+                <option value="frontend developer">Frontend Developer</option>
+                <option value="frontend developer">Backend Developer</option>
+                <option value="Database developer">Database Developer</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="planguage">Which programming language intrigues you the most?</label><br>
+            <!-- Checkbox -->
+            <input type="checkbox" name="planguage" value="javascript" id="planguage">Javascript<br>
+            <input type="checkbox" name="planguage" value="php" id="planguage">PHP<br>
+            <input type="checkbox" name="planguage" value="sql" id="planguage">SQL<br>
+        </div>
+        <div class="form-control">
+            <label for="message">Message</label><br>
+            <!-- Textarea -->
+            <textarea name="message" id="message" cols="50" rows="6"></textarea>
+
+        </div>
+        <!-- Submit button -->
+        <button type="submit" value="Submit">Submit
+
+
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>
